@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Tutorial &mdash; odgi 00d68c2 documentation</title>
+  <title>Tutorial &mdash; odgi fa6f540 documentation</title>
   
 
   
@@ -228,7 +228,7 @@
 </div>
 <div class="section" id="traversing-edges">
 <h3>Traversing Edges<a class="headerlink" href="#traversing-edges" title="Permalink to this headline">¶</a></h3>
-<p>If we wanted to traverse these edges, we could do it using the iterator method <a class="reference internal" href="glossary.html#odgi.graph.follow_edges" title="odgi.graph.follow_edges"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.follow_edges()</span></code></a>.</p>
+<p>If we wanted to traverse these edges, we could do it using the iterator method <a class="reference internal" href="glossary_source.html#odgi.graph.follow_edges" title="odgi.graph.follow_edges"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.follow_edges()</span></code></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">next_node_list</span><span class="p">(</span><span class="n">handle</span><span class="p">):</span>
         <span class="n">lis</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">gr</span><span class="o">.</span><span class="n">follow_edges</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="n">lis</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
@@ -247,7 +247,7 @@
 <span class="n">n2</span><span class="p">:</span> <span class="n">CCGT</span>
 </pre></div>
 </div>
-<p>A map of the data can be generated using <a class="reference internal" href="glossary.html#odgi.graph.to_gfa" title="odgi.graph.to_gfa"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.to_gfa()</span></code></a>.</p>
+<p>A map of the data can be generated using <a class="reference internal" href="glossary_source.html#odgi.graph.to_gfa" title="odgi.graph.to_gfa"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.to_gfa()</span></code></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">gr</span><span class="o">.</span><span class="n">to_gfa</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -270,7 +270,7 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><a class="reference internal" href="glossary.html#odgi.graph.append_step" title="odgi.graph.append_step"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.append_step()</span></code></a> will not stop you from appending nodes that are not connected to the preceeding node.</p>
+<p><a class="reference internal" href="glossary_source.html#odgi.graph.append_step" title="odgi.graph.append_step"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.append_step()</span></code></a> will not stop you from appending nodes that are not connected to the preceeding node.</p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># the following code runs without error</span>
 <span class="n">badpath</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">create_path_handle</span><span class="p">(</span><span class="s2">&quot;badpath&quot;</span><span class="p">)</span>
@@ -309,7 +309,7 @@
 </div>
 <div class="section" id="saving-and-loading-odgi-graphs">
 <h2>Saving and Loading ODGI Graphs<a class="headerlink" href="#saving-and-loading-odgi-graphs" title="Permalink to this headline">¶</a></h2>
-<p>Graphs can be saved and loaded through the <a class="reference internal" href="glossary.html#odgi.graph.serialize" title="odgi.graph.serialize"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.serialize()</span></code></a> and <a class="reference internal" href="glossary.html#odgi.graph.load" title="odgi.graph.load"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.load()</span></code></a> methods.</p>
+<p>Graphs can be saved and loaded through the <a class="reference internal" href="glossary_source.html#odgi.graph.serialize" title="odgi.graph.serialize"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.serialize()</span></code></a> and <a class="reference internal" href="glossary_source.html#odgi.graph.load" title="odgi.graph.load"><code class="xref py py-func docutils literal notranslate"><span class="pre">odgi.graph.load()</span></code></a> methods.</p>
 <div class="section" id="graph-file-example">
 <h3>Graph File Example<a class="headerlink" href="#graph-file-example" title="Permalink to this headline">¶</a></h3>
 <p>If you wish to save the graph from the above session, that can be done with:</p>
@@ -363,7 +363,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, Erik Garrison. Revision v0.5.1-00d68c2.
+        &#169; Copyright 2021, Erik Garrison. Revision v0.5.1-fa6f540.
 
     </p>
   </div>
